@@ -16,8 +16,9 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageTags>data-generation</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>✨ 新增手机号码生成器</PackageReleaseNotes>
+    <PackageReleaseNotes>✨ 新增银行卡号生成器</PackageReleaseNotes>
     <Description>伪数据生成器，用于构造手机号、银行卡号、身份证号等数据</Description>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +27,13 @@
 
   <ItemGroup>
     <Content Include="logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
