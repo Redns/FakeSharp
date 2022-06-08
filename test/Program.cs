@@ -14,6 +14,9 @@ namespace test
 
             // 随机生成10个身份证号
             GenerateIDCardNumbers();
+
+            // 随机生成10个邮箱账号
+            GenerateEmails();
         }
 
         /// <summary>
@@ -57,6 +60,20 @@ namespace test
             for (int i = 0; i < fakeIDCardNumbers.Length; i++)
             {
                 Console.WriteLine($"[{i}]{fakeIDCardNumbers[i]}");
+            }
+        }
+
+        /// <summary>
+        /// 随机生成邮箱号
+        /// </summary>
+        static void GenerateEmails()
+        {
+            var fakeEmails = Email.Generate(count: 10).ToArray();
+
+            Console.WriteLine("########## 邮箱号 ##########");
+            for (int i = 0; i < fakeEmails.Length; i++)
+            {
+                Console.WriteLine($"[{i}]{fakeEmails[i]}");
             }
         }
     }

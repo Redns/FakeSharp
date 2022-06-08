@@ -16,9 +16,9 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageTags>data-generation</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>✨ 新增身份证号生成器</PackageReleaseNotes>
+    <PackageReleaseNotes>✨ 新增邮箱号生成器</PackageReleaseNotes>
     <Description>伪数据生成器，用于构造手机号、银行卡号、身份证号等数据</Description>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>

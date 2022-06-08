@@ -19,7 +19,7 @@
         /// <returns></returns>
         public static IEnumerable<string> Generate(MAC macConfig = MAC.Any, int count = 100)
         {
-            var r = new Random(DateTime.Now.Second + DateTime.Now.Millisecond);
+            var r = new Random(DateTime.Now.Second * 1000 + DateTime.Now.Millisecond);
             var fakeNumbers = new string[count];
             for(int i = 0; i < count; i++)
             {

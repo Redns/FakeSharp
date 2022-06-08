@@ -34,7 +34,7 @@ namespace FakeSharp
         {
             var fakeCardNumber = 0L;
             var fakeCardNumbers = new string[count];
-            var r = new Random(DateTime.Now.Second + DateTime.Now.Millisecond);
+            var r = new Random(DateTime.Now.Second * 1000 + DateTime.Now.Millisecond);
 
             for (int i = 0; i < count; i++)
             {
