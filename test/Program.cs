@@ -11,6 +11,9 @@ namespace test
 
             // 随机生成10个银行卡号，限制Bin码为建设银行
             GenerateCreditCardNumbers();
+
+            // 随机生成10个身份证号
+            GenerateIDCardNumbers();
         }
 
         /// <summary>
@@ -33,12 +36,27 @@ namespace test
         /// </summary>
         static void GenerateCreditCardNumbers()
         {
-            var fakeCreditCardNumbers = CreditCard.Generate(CreditCard.BinType.JianShe, count: 10).ToArray();
+            var fakeCreditCardNumbers = CreditCard.Generate(CreditCard.BinType.Any, count: 10).ToArray();
 
             Console.WriteLine("########## 银行卡号 ##########");
             for (int i = 0; i < fakeCreditCardNumbers.Length; i++)
             {
                 Console.WriteLine($"[{i}]{fakeCreditCardNumbers[i]}");
+            }
+        }
+
+
+        /// <summary>
+        /// 随机生成身份证号
+        /// </summary>
+        static void GenerateIDCardNumbers()
+        {
+            var fakeIDCardNumbers = IdentifyCard.Generate(count: 10).ToArray();
+
+            Console.WriteLine("########## 身份证号 ##########");
+            for (int i = 0; i < fakeIDCardNumbers.Length; i++)
+            {
+                Console.WriteLine($"[{i}]{fakeIDCardNumbers[i]}");
             }
         }
     }
