@@ -9,6 +9,15 @@
                                                    'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
                                                    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
+
+        /// <summary>
+        /// 生成邮箱账号
+        /// </summary>
+        /// <param name="emailSuffix">邮箱后缀数组</param>
+        /// <param name="minLength">最小长度</param>
+        /// <param name="maxLength">最大长度</param>
+        /// <param name="count">生成数量</param>
+        /// <returns></returns>
         public static IEnumerable<string> Generate(string[]? emailSuffix = null, int minLength = 8, int maxLength = 8, int count = 100)
         {
             // 检验输入参数
