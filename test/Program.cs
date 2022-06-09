@@ -68,7 +68,7 @@ namespace test
         /// </summary>
         static void GenerateEmails()
         {
-            var fakeEmails = Email.Generate(count: 10).ToArray();
+            var fakeEmails = Email.Generate(count: 10, format:Email.Format.Any).ToArray();
 
             Console.WriteLine("########## 邮箱号 ##########");
             for (int i = 0; i < fakeEmails.Length; i++)
